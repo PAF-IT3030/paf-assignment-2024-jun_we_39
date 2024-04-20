@@ -1,0 +1,13 @@
+access-token:
+  private: "access-refresh-token-keys/access-token-private.key"
+  public: "access-refresh-token-keys/access-token-public.key"
+refresh-token:
+  private: "access-refresh-token-keys/refresh-token-private.key"
+  public: "access-refresh-token-keys/refresh-token-public.key"
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://it21247668:juWvfyxBUicqbhQ3@paf.kgbxljg.mongodb.net/paf?retryWrites=true&w=majority&appName=paf
+logging:
+  level:
+    org.springframework.security: DEBUG
