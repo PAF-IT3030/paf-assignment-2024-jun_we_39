@@ -61,3 +61,10 @@ style={{ borderRadius: "5px", border: "1px solid #ddd" }}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   style={{ borderRadius: "5px", border: "1px solid #ddd" }}
+
+                  />
+                  </div>
+    
+                  <button type="submit" className="btn btn-primary" style={{ borderRadius: "5px", fontSize: "1.2rem", fontWeight: "bold" }}>
+                    LOGIN
+                  </button>
