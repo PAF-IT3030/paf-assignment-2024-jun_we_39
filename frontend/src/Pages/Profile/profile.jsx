@@ -27,3 +27,9 @@ function Profile(props) {
           country,
           profileImage
         };
+
+
+        dispatch(updateUserById(userUpdate));
+
+        props.closeModal();
+      };
