@@ -30,3 +30,9 @@ function Home() {
               {/* Status Update Form */}
               {/* You can add a status update form here */}
             </div>
+            <div className="col-md-3">
+          <div className="sticky-top">
+            {/* Right Sidebar */}
+            {/* You can add friend suggestions or trending topics here */}
+          </div>
+        </div>
