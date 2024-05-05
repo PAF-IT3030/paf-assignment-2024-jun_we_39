@@ -64,3 +64,13 @@ function Profile(props) {
           getDownloadURL(uploadTask.snapshot.ref).then((url) => {
             setProfileImage(url);
           });
+
+          return (
+            <div>
+              <h1 className="text-center">Update Profile</h1>
+              <hr />
+              <div className="container">
+                <div className="row mt-5">
+                  <div className="col-md-6 offset-md-3">
+                    <form onSubmit={handleSubmit}>
+                      <div className="mb-3">
