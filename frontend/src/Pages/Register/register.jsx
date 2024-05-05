@@ -12,3 +12,9 @@ function Register() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        if (!username || !password || !confirmPassword) {
+            setError("All fields are required");
+            return;
+          }
+      
