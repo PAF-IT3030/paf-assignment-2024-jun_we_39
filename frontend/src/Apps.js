@@ -18,3 +18,19 @@ function App() {
         <Router>
           <Navbar />
           <div className="body">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/user" element={<User />} />
+            <Route path="/user/:userId" element={<UserPosts />} />
+            <Route path="/sharedposts" element={<SharedPosts />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Register />} />
+            <Route path="/profile" element={<Profile />} />
+          </Routes>
+        </div>
+
+        </Router>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
