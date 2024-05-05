@@ -8,3 +8,9 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 function Profile(props) {
     const dispatch = useDispatch();
     const user = useSelector((state) => state.user);
+
+    const [username, setUsername] = useState(user?.user?.username);
+    const [email, setEmail] = useState(user?.user?.email);
+    const [contactNumber, setContactNumber] = useState(user?.user?.contactNumber);
+    const [country, setCountry] = useState(user?.user?.country);
+    const [profileImage, setProfileImage] = useState(user?.user?.profileImage ? user.user.profileImage : null);
