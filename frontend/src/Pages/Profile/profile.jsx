@@ -132,3 +132,11 @@ pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 </label>
                 <input
                   type="text"
+
+                  className="form-control"
+                  id="country"
+                  placeholder="Enter your country"
+                  value={country}
+                  onChange={(e) => {
+                    setCountry(e.target.value);
+                  }}
