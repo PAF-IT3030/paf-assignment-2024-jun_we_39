@@ -19,3 +19,6 @@ function SharedPosts() {
         <SharedPostsList posts={post.posts} fetchType="GET_ALL_POSTS_SHARED"/>
     </div>
   );
+}
+
+export default SharedPosts;
