@@ -53,4 +53,11 @@ style={{ borderRadius: "5px", border: "1px solid #ddd" }}
                 </div>
               </div>
 
-              
+              <div className="mb-3">
+                <label className="form-label" style={{ color: "#555", fontSize: "1.2rem" }}>Password</label>
+                <input
+                  type="password"
+                  className="form-control input-width-login"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  style={{ borderRadius: "5px", border: "1px solid #ddd" }}
