@@ -33,3 +33,10 @@ function Profile(props) {
 
         props.closeModal();
       };
+      const handleDelete = () => {
+        if (window.confirm("Are you sure you want to delete your account?")) {
+          dispatch(deleteUserById(user.userId));
+          
+          props.closeModal();
+        }
+      };
