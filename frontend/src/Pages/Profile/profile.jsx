@@ -85,3 +85,12 @@ id="username"
 placeholder="Enter your username"
 value={username}
 readOnly
+
+
+/>
+</div>
+<div className="mb-3">
+  <label htmlFor="contactNumber" className="form-label">
+    Contact Number
+  </label>
+  <input
