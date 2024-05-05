@@ -9,3 +9,9 @@ function SharedPosts() {
     const comment = useSelector((state) => state.comment);
     const user = useSelector((state) => state.user);
     useEffect(() => {
+
+        if (user.userId) {
+            dispatch(getPostShareByUserId(user.userId));
+          }
+        }, [dispatch, user.userId]);
+        return (
