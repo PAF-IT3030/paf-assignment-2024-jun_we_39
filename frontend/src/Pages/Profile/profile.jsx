@@ -124,3 +124,11 @@ onChange={(e) => {
 }}
 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
 />
+
+</div>
+              <div className="mb-3">
+                <label htmlFor="country" className="form-label">
+                  Country
+                </label>
+                <input
+                  type="text"
