@@ -46,3 +46,5 @@ function Profile(props) {
         if (!file) {
           alert("Please upload an image first!");
         }
+        
+    const storageRef = ref(storage, `/users/${file.name}`);
