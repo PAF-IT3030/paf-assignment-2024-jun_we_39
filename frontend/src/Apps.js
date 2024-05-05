@@ -34,3 +34,10 @@ function App() {
         position="top-right"
         autoClose={3000}
         hideProgressBar={false}
+
+        />
+        </div>
+      );
+    }
+    
+    export default App;
