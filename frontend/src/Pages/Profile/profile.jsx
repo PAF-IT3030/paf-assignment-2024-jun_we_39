@@ -18,4 +18,12 @@ function Profile(props) {
     useEffect(() => {
         dispatch(getUser(user.userId));
       }, [dispatch]);
-    
+      const handleSubmit = () => {
+        const userUpdate = {
+          id: user.user.id,
+          username,
+          email,
+          contactNumber,
+          country,
+          profileImage
+        };
