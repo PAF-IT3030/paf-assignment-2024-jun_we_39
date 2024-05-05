@@ -27,4 +27,6 @@ function Register() {
         username,
         password,
       };
-  
+      dispatch(register(user));
+    };
+    
