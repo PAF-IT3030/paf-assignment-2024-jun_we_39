@@ -8,4 +8,6 @@ import NewUsersSuggest from "../../Components/NewUsersSuggest";
 function Home() {
     const dispatch = useDispatch();
     const post = useSelector((state) => state.post);
-  
+    useEffect(() => {
+        dispatch(getPosts());
+      }, [dispatch]);
