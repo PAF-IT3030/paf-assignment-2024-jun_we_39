@@ -94,3 +94,13 @@ readOnly
     Contact Number
   </label>
   <input
+
+type="text"
+className="form-control"
+id="contactNumber"
+placeholder="Enter your contact number"
+value={contactNumber}
+onChange={(e) => {
+  setContactNumber(e.target.value);
+}}
+pattern="[0-9]{10}"
