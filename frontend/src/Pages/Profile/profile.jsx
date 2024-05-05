@@ -74,3 +74,7 @@ function Profile(props) {
                   <div className="col-md-6 offset-md-3">
                     <form onSubmit={handleSubmit}>
                       <div className="mb-3">
+                      <label htmlFor="username" className="form-label">
+                  Username
+                </label>
+                <input
