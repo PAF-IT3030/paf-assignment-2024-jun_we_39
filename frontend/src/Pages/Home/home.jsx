@@ -36,3 +36,12 @@ function Home() {
             {/* You can add friend suggestions or trending topics here */}
           </div>
         </div>
+
+        <div className="col-md-3">
+          <div className="sticky-top">
+            {/* Right Sidebar */}
+            {/* You can add friend suggestions or trending topics here */}
+          </div>
+        </div>
+      </div>
+    </div>
