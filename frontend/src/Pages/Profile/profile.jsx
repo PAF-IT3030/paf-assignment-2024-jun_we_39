@@ -40,3 +40,9 @@ function Profile(props) {
           props.closeModal();
         }
       };
+      const uploadImage = (e) => {
+        const file = e.target.files[0];
+    
+        if (!file) {
+          alert("Please upload an image first!");
+        }
