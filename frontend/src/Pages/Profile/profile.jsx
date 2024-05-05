@@ -78,3 +78,10 @@ function Profile(props) {
                   Username
                 </label>
                 <input
+
+type="text"
+className="form-control"
+id="username"
+placeholder="Enter your username"
+value={username}
+readOnly
