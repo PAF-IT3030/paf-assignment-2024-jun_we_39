@@ -15,3 +15,7 @@ function SharedPosts() {
           }
         }, [dispatch, user.userId]);
         return (
+            <div>
+        <SharedPostsList posts={post.posts} fetchType="GET_ALL_POSTS_SHARED"/>
+    </div>
+  );
