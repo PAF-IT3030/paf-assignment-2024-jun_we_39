@@ -56,3 +56,11 @@ function Profile(props) {
         "state_changed",
         (snapshot) => {
           Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
+
+        },
+        (err) => console.log(err),
+        () => {
+          // download url
+          getDownloadURL(uploadTask.snapshot.ref).then((url) => {
+            setProfileImage(url);
+          });
