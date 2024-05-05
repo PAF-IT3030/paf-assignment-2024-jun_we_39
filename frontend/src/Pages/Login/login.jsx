@@ -31,3 +31,12 @@ src={LoginImage}
 className="image-fluid"
 alt="login"
 style={{ maxWidth: "100%", height: "100%", borderRadius: "10px" }}
+
+/>
+</div>
+</div>
+<div className="col-6">
+<form onSubmit={handleSubmit}>
+  <div className="mt-5 mb-3">
+    <label className="form-label" style={{ color: "#555", fontSize: "1.2rem" }}>Username</label>
+    <input
