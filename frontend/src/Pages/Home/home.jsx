@@ -11,3 +11,14 @@ function Home() {
     useEffect(() => {
         dispatch(getPosts());
       }, [dispatch]);
+
+      
+  return (
+    <div className="container mt-5">
+      <div className="row">
+        <div className="col-md-3">
+          <div className="sticky-top">
+            {/* Sidebar */}
+            <NewUsersSuggest />
+          </div>
+        </div>
