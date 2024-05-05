@@ -87,4 +87,7 @@ body {
   }
   .input-width-register {
     width: 400px;
+  }
+  .input-width-login {
+    width: 370px;
   }    
