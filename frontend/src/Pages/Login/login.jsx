@@ -10,3 +10,12 @@ function Login() {
     const dispatch = useDispatch();
     const [username, setUsername] = React.useState("");
     const [password, setPassword] = React.useState("");
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const user = {
+          username,
+          password,
+        };
+        dispatch(login(user));
+      };
+    
