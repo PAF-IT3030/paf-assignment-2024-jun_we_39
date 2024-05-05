@@ -151,3 +151,11 @@ pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                     className="img-fluid me-3"
                     alt="Profile"
                   />
+
+                )}
+                <label htmlFor="country" className="form-label">
+                  Profile Image
+                </label>
+                <input
+                  type="file"
+                  className="form-control"
