@@ -104,3 +104,19 @@ onChange={(e) => {
   setContactNumber(e.target.value);
 }}
 pattern="[0-9]{10}"
+
+/>
+</div>
+<div className="mb-3">
+  <label htmlFor="email" className="form-label">
+    Email Address
+  </label>
+  <input
+
+type="email"
+className="form-control"
+id="email"
+placeholder="Enter your email"
+value={email}
+onChange={(e) => {
+  setEmail(e.target.value);
