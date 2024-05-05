@@ -47,3 +47,8 @@ value={username}
 onChange={(e) => setUsername(e.target.value)}
 style={{ borderRadius: "5px", border: "1px solid #ddd" }}
 />
+
+<div id="emailHelp" className="form-text" style={{ color: "#888", fontSize: "0.9rem" }}>
+                  We'll never share your username with anyone else.
+                </div>
+              </div>
