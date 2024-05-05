@@ -49,3 +49,6 @@ body {
     color: #ed9472;
     transform: scale(1.1);
   }
+  .comment-div{
+    background-color: rgb(219, 218, 218);
+  }
