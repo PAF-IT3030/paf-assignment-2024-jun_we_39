@@ -68,3 +68,9 @@ style={{ borderRadius: "5px", border: "1px solid #ddd" }}
                   <button type="submit" className="btn btn-primary" style={{ borderRadius: "5px", fontSize: "1.2rem", fontWeight: "bold" }}>
                     LOGIN
                   </button>
+
+                  </form>
+            <hr />
+            <Link to="/forgotpassword" className="text-decoration-none" style={{ color: "#555", fontSize: "1rem" }}>
+              Forgot Password?
+            </Link>
