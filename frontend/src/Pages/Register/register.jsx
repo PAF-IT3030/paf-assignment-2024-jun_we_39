@@ -17,4 +17,7 @@ function Register() {
             setError("All fields are required");
             return;
           }
-      
+          if (password !== confirmPassword) {
+            setError("Passwords do not match");
+            return;
+          }      
