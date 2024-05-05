@@ -22,3 +22,11 @@ function Home() {
             <NewUsersSuggest />
           </div>
         </div>
+
+        <div className="col-md-6">
+          {/* Main Content */}
+          <div className="row">
+            <div className="col-12">
+              {/* Status Update Form */}
+              {/* You can add a status update form here */}
+            </div>
