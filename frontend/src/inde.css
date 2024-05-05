@@ -64,3 +64,8 @@ body {
   .newusercard:hover {
     transform: scale(1.1);
   }
+
+  .post-card{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #cccccc7a;
