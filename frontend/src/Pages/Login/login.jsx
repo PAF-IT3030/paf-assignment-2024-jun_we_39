@@ -18,4 +18,11 @@ function Login() {
         };
         dispatch(login(user));
       };
-    
+      return (
+        <div className="container mt-5 mb-5 card" style={{ backgroundColor: "#f0f0f0", borderRadius: "10px", boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}>
+          <div className="card-body">
+            <div className="row">
+              <div className="col-6">
+                <div className="text-center">
+                  <h1 className="mt-1" style={{ color: "#333", fontSize: "1.5rem", fontWeight: "bold"}}>Welcome to Anytime Fitness</h1>
+                  <img
