@@ -74,3 +74,12 @@ style={{ borderRadius: "5px", border: "1px solid #ddd" }}
             <Link to="/forgotpassword" className="text-decoration-none" style={{ color: "#555", fontSize: "1rem" }}>
               Forgot Password?
             </Link>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Login;
