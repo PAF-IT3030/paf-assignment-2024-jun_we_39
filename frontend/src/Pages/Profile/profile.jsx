@@ -51,3 +51,8 @@ function Profile(props) {
     // progress can be paused and resumed. It also exposes progress updates.
     // Receives the storage reference and the file to upload.
     const uploadTask = uploadBytesResumable(storageRef, file);
+
+    uploadTask.on(
+        "state_changed",
+        (snapshot) => {
+          Math.round((snapshot.bytesTransferred / snapshot.totalBytes) * 100);
