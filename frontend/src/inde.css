@@ -3,3 +3,9 @@ body {
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: url("https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg") repeat center fixed;
+    background-size: contain;
+  }
+  
