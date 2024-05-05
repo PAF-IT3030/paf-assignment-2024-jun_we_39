@@ -85,4 +85,6 @@ body {
     border: 1px solid #929191;
     background-color: #cccccc7a;
   }
-    
+  .input-width-register {
+    width: 400px;
+  }    
