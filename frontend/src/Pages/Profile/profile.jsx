@@ -48,3 +48,6 @@ function Profile(props) {
         }
         
     const storageRef = ref(storage, `/users/${file.name}`);
+    // progress can be paused and resumed. It also exposes progress updates.
+    // Receives the storage reference and the file to upload.
+    const uploadTask = uploadBytesResumable(storageRef, file);
