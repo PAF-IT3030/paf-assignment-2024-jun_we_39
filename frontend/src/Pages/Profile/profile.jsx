@@ -14,3 +14,8 @@ function Profile(props) {
     const [contactNumber, setContactNumber] = useState(user?.user?.contactNumber);
     const [country, setCountry] = useState(user?.user?.country);
     const [profileImage, setProfileImage] = useState(user?.user?.profileImage ? user.user.profileImage : null);
+
+    useEffect(() => {
+        dispatch(getUser(user.userId));
+      }, [dispatch]);
+    
