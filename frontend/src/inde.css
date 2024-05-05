@@ -69,3 +69,6 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     background-color: #cccccc7a;
+    border-radius: 20px;
+    border: 1px solid #929191;
+  }
