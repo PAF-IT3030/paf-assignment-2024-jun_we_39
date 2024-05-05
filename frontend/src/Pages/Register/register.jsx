@@ -30,3 +30,12 @@ function Register() {
       dispatch(register(user));
     };
     
+    return (
+        <div className="register-container">
+          <div className="register-card">
+            <h1 className="register-title">Sign Up</h1>
+            {error && <div className="error">{error}</div>}
+            <form onSubmit={handleSubmit}>
+              <div className="form-group">
+                <label htmlFor="username">Username</label>
+                <input
