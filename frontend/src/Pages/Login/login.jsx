@@ -40,3 +40,10 @@ style={{ maxWidth: "100%", height: "100%", borderRadius: "10px" }}
   <div className="mt-5 mb-3">
     <label className="form-label" style={{ color: "#555", fontSize: "1.2rem" }}>Username</label>
     <input
+
+type="text"
+className="form-control input-width-login"
+value={username}
+onChange={(e) => setUsername(e.target.value)}
+style={{ borderRadius: "5px", border: "1px solid #ddd" }}
+/>
