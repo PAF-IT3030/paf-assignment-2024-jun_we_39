@@ -26,3 +26,8 @@ function Login() {
                 <div className="text-center">
                   <h1 className="mt-1" style={{ color: "#333", fontSize: "1.5rem", fontWeight: "bold"}}>Welcome to Anytime Fitness</h1>
                   <img
+
+src={LoginImage}
+className="image-fluid"
+alt="login"
+style={{ maxWidth: "100%", height: "100%", borderRadius: "10px" }}
