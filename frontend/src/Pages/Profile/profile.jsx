@@ -140,3 +140,14 @@ pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                   onChange={(e) => {
                     setCountry(e.target.value);
                   }}
+
+
+                  />
+              </div>
+              <div className="mb-3">
+                {profileImage && (
+                  <img
+                    src={profileImage}
+                    className="img-fluid me-3"
+                    alt="Profile"
+                  />
