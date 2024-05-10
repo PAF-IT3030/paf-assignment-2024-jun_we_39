@@ -11,5 +11,8 @@ import java.util.List;
 @Getter
 @Setter
 public class WorkoutPlan {
+    @Id
+    private String id;
+    private String userId;
 
 }
