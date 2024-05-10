@@ -1,7 +1,7 @@
 package com.paf.socialmedia.controller;
 
 import com.paf.socialmedia.models.MealPlan;
-import com.example.pafbackend.repositories.MealPlanRepository;
+import com.paf.socialmedia.repository.MealPlanRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
