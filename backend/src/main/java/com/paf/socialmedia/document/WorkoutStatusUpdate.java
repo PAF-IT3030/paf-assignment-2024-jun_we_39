@@ -14,6 +14,7 @@ public class WorkoutStatusUpdate {
     private String id;
     private String userId;
     private Date timestamp;
+    private String title;
     
 
 }
