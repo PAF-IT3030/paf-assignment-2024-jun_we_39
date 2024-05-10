@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -51,4 +52,17 @@ public class WorkoutStatusUpdateController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    
+    @PutMapping("/{updateId}")
+    public ResponseEntity<WorkoutStatusUpdate> updateUpdate(@PathVariable String updateId, @RequestBody WorkoutStatusUpdate updateDetails) {
+        return workoutStatusUpdateRepository.findById(updateId)
+                .map(existingUpdate -> {
+                    existingUpdate.setTitle(updateDetails.getTitle());
+                    existingUpdate.setImage(updateDetails.getImage());
+                    existingUpdate.setDescription(updateDetails.getDescription());
+                    WorkoutStatusUpdate updatedUpdate = workoutStatusUpdateRepository.save(existingUpdate);
+                    return ResponseEntity.ok(updatedUpdate);
+                })
+                .orElse(ResponseEntity.notFound().build());
+    }
+}
+
