@@ -34,7 +34,7 @@ public class CommentController {
     public ResponseEntity<?> updateCommentById(@PathVariable String id, @RequestBody Comment comment){
         return  commentService.updateCommentById(id,comment);
     }
-    @DeleteMappin("/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteCommentById(@PathVariable String id){
         return commentService.deleteCommentById(id);
     }
