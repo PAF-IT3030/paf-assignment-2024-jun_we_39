@@ -51,6 +51,10 @@ public class MealController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
+         // Set the ID of the updated meal plan
+         updatedMealPlan.setId(mealPlanId);
+
+
 
 
 }
