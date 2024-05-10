@@ -18,7 +18,7 @@ public class CommentController {
         return commentService.getCommentById(id);
     }
     @GetMapping
-    publi ResponseEntity<?> getComments(){
+    public ResponseEntity<?> getComments(){
         return commentService.getComments();
     }
 
