@@ -26,6 +26,11 @@ public class MealController {
         return new ResponseEntity<>(mealPlans, HttpStatus.OK);
     }
 
+    @GetMapping("/{userId}")
+    public ResponseEntity<List<MealPlan>> getMealPlansByUserId(@PathVariable String userId) {
+        List<MealPlan> mealPlans = mealPlanRepository.findByUserId(userId);
+        return new ResponseEntity<>(mealPlans, HttpStatus.OK);
+    }
 
 
 }
