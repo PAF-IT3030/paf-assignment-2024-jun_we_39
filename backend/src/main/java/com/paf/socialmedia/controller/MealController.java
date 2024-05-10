@@ -44,5 +44,13 @@ public class MealController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
+    @PutMapping("/{mealPlanId}")
+    public ResponseEntity<MealPlan> updateMealPlan(@PathVariable String mealPlanId, @RequestBody MealPlan updatedMealPlan) {
+        // Check if the meal plan with the given ID exists
+        if (!mealPlanRepository.existsById(mealPlanId)) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+
 
 }
