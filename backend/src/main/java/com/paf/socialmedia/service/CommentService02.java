@@ -52,6 +52,10 @@ public class CommentService02 {
             if(!notification.getMessage().isEmpty()) {
                 updateNotification.setMessage(notification.getMessage());
             }
+            if(notification.getIsRead()) {
+                updateNotification.setIsRead(notification.getIsRead());
+            }
+
 
 
     }
