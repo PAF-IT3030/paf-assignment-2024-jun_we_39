@@ -13,5 +13,7 @@ public class MealPlan {
     @Id
     private String id;
     private String userId;
+    private String mealDetails;  // Consider using a structured type or JSON
+    private String dietaryPreferences;
     
 }
