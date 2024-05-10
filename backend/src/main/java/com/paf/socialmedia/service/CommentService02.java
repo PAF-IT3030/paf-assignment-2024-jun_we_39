@@ -58,7 +58,10 @@ public class CommentService02 {
 
             updateNotification.setUpdatedAt(new Date(System.currentTimeMillis()));
             return new ResponseEntity<>(notificationRepository.save(updateNotification), HttpStatus.OK);
+    }else{
+        return new ResponseEntity<>("Comment Update Error",HttpStatus.NOT_FOUND);
     }
+
 
 
 
