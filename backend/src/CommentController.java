@@ -17,3 +17,4 @@ public class CommentController {
     public ResponseEntity<?> getCommentById(@PathVariable String id){
         return commentService.getCommentById(id);
     }
+    @GetMapping
