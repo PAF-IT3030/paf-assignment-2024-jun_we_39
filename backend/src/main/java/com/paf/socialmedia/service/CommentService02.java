@@ -25,7 +25,10 @@ public class CommentService02 {
             return new ResponseEntity<>("No Notification Found",HttpStatus.NOT_FOUND);
         }
     }
-
+    public ResponseEntity<?> getNotifications(){
+        List<Notification> notifications = notificationRepository.findAll();
+        return new ResponseEntity<List<Notification>>(notifications, HttpStatus.OK);
+    }
 
 
 
