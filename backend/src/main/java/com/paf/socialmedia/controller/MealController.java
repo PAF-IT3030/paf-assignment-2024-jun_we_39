@@ -12,5 +12,8 @@ import java.util.List;
 @RequestMapping("/api/mealPlans")
 
 public class MealController {
+
+    private final MealPlanRepository mealPlanRepository;
+
     
 }
