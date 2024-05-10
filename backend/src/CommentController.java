@@ -12,3 +12,5 @@ import org.springframework.web.bind.annotation.*;
 public class CommentController {
     @Autowired
     private CommentService commentService;
+
+    @GetMapping("/{id}")
