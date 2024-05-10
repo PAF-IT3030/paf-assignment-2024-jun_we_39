@@ -1,5 +1,1 @@
-package com.paf.socialmedia.controller;
-
-public class workoutplancontroller {
-    
-}
+package com.example.pafbackend.controllers;
