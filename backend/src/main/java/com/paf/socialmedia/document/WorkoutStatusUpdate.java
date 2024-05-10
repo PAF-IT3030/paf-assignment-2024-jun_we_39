@@ -12,7 +12,6 @@ import lombok.Setter;
 public class WorkoutStatusUpdate {
     @Id
     private String id;
+    private String userId;
     
-
-
 }
