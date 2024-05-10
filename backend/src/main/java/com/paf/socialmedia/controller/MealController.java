@@ -38,4 +38,11 @@ public class MealController {
         return new ResponseEntity<>(savedMealPlan, HttpStatus.CREATED);
     }
 
+    @DeleteMapping("/{mealPlanId}")
+    public ResponseEntity<Void> deleteMealPlan(@PathVariable String mealPlanId) {
+        mealPlanRepository.deleteById(mealPlanId);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
+
 }
