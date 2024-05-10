@@ -27,7 +27,7 @@ public class CommentController {
         return commentService.getCommentsByPost(id);
     }
     @PostMapping
-    public ResponseEntity<?> saveComment(@RequestBody Comment comment){
+    public esponseEntity<?> saveComment(@RequestBody Comment comment){
         return commentService.saveComment(comment);
     }
     @PutMapping("/{id}")
