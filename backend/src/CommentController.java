@@ -20,3 +20,4 @@ public class CommentController {
     @GetMapping
     public ResponseEntity<?> getComments(){
         return commentService.getComments();
+    }
