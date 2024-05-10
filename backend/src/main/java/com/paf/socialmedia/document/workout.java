@@ -1,5 +1,1 @@
-package com.paf.socialmedia.document;
-
-public class workout {
-    
-}
+package com.example.pafbackend.models;
