@@ -14,5 +14,7 @@ public class WorkoutPlan {
     @Id
     private String id;
     private String userId;
+    private String routines;
+    private String planName;
 
 }
