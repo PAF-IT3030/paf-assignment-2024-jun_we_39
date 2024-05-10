@@ -17,7 +17,7 @@ public class CommentController {
     public ResponseEntity<?> getCommentById(@PathVariable String id){
         return commentService.getCommentById(id);
     }
-    @GetMappin
+    @GetMapping
     public ResponseEntity<?> getComments(){
         return commentService.getComments();
     }
