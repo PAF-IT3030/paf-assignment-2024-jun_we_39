@@ -15,5 +15,13 @@ public class MealController {
 
     private final MealPlanRepository mealPlanRepository;
 
+    @Autowired
+    public MealPlanController(MealPlanRepository mealPlanRepository) {
+        this.mealPlanRepository = mealPlanRepository;
+    }
+
+
+
+
     
 }
