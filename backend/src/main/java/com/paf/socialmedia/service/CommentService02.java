@@ -13,5 +13,11 @@ import java.util.Optional;
 
 @Service
 public class CommentService02 {
+    @Autowired
+    private NotificationRepository notificationRepository;
+
+
+
+
     
 }
