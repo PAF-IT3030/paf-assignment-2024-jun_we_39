@@ -17,7 +17,16 @@ public class CommentService02 {
     private NotificationRepository notificationRepository;
 
 
+    public ResponseEntity<?> getNotificationById(String id){
+        Optional<Notification> notification =  notificationRepository.findById(id);
+        if(notification.isPresent()){
+            return new ResponseEntity<>(notification.get(), HttpStatus.OK);
+        }else{
+            return new ResponseEntity<>("No Notification Found",HttpStatus.NOT_FOUND);
+        }
+    }
 
 
-    
+
+
 }
