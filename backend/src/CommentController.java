@@ -4,7 +4,7 @@ import com.paf.socialmedia.document.Comment;
 import com.paf.socialmedia.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.sprinframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin("*")
 @RestController
