@@ -10,5 +10,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
 @Setter
 public class MealPlan {
+    @Id
+    private String id;
+    private String userId;
     
 }
