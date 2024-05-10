@@ -23,3 +23,4 @@ public class CommentController {
     }
 
     @GetMapping("/post/{id}")
+    public ResponseEntity<?> getCommentsByPost(@PathVariable String id){
