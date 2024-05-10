@@ -18,3 +18,4 @@ public class CommentController {
         return commentService.getCommentById(id);
     }
     @GetMapping
+    public ResponseEntity<?> getComments(){
