@@ -21,3 +21,5 @@ public class CommentController {
     public ResponseEntity<?> getComments(){
         return commentService.getComments();
     }
+
+    @GetMapping("/post/{id}")
