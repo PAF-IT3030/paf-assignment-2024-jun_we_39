@@ -15,3 +15,4 @@ public class CommentController {
 
     @GetMapping("/{id}")
     public ResponseEntity<?> getCommentById(@PathVariable String id){
+        return commentService.getCommentById(id);
