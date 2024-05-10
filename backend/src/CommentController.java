@@ -27,3 +27,16 @@ public class CommentController {
         return commentService.getCommentsByPost(id);
     }
     @PostMapping
+    public ResponseEntity<?> saveComment(@RequestBody Comment comment){
+        return commentService.saveComment(comment);
+    }
+    @PutMapping("/{id}")
+    public ResponseEntity<?> updateCommentById(@PathVariable String id, @RequestBody Comment comment){
+        return  commentService.updateCommentById(id,comment);
+    }
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deleteCommentById(@PathVariable String id){
+        return commentService.deleteCommentById(id);
+    }
+}
+
