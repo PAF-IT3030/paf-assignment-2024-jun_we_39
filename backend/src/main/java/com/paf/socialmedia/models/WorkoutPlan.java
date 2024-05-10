@@ -16,5 +16,7 @@ public class WorkoutPlan {
     private String userId;
     private String routines;
     private String planName;
+    private String description;
+    private String goal;
 
 }
