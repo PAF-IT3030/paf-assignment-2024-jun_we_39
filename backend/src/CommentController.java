@@ -26,3 +26,4 @@ public class CommentController {
     public ResponseEntity<?> getCommentsByPost(@PathVariable String id){
         return commentService.getCommentsByPost(id);
     }
+    @PostMapping
