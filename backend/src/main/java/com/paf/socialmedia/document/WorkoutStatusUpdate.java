@@ -17,6 +17,8 @@ public class WorkoutStatusUpdate {
     private String title;
     private String image;
     private String description;
-   
+    private String exerciseType;
+    
+
 
 }
