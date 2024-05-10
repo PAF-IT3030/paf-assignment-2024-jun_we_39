@@ -46,7 +46,14 @@ public class CommentService02 {
     }
     public ResponseEntity<?> updateNotificationById(String id,Notification notification){
 
-        
+        Optional<Notification> existingNotification =  notificationRepository.findById(id);
+        if(existingNotification.isPresent()){
+            Notification updateNotification = existingNotification.get();
+            if(!notification.getMessage().isEmpty()) {
+                updateNotification.setMessage(notification.getMessage());
+            }
+
+
     }
 
 
