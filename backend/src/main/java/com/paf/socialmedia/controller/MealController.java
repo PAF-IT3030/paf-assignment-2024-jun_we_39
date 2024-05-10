@@ -32,5 +32,10 @@ public class MealController {
         return new ResponseEntity<>(mealPlans, HttpStatus.OK);
     }
 
+    @PostMapping
+    public ResponseEntity<MealPlan> createMealPlan(@RequestBody MealPlan mealPlan) {
+        MealPlan savedMealPlan = mealPlanRepository.save(mealPlan);
+        return new ResponseEntity<>(savedMealPlan, HttpStatus.CREATED);
+    }
 
 }
