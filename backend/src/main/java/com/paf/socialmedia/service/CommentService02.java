@@ -29,6 +29,10 @@ public class CommentService02 {
         List<Notification> notifications = notificationRepository.findAll();
         return new ResponseEntity<List<Notification>>(notifications, HttpStatus.OK);
     }
+    public ResponseEntity<?> getUnreadNotificationsByUserId(String userId) {
+        List<Notification> notifications = notificationRepository.findByUserIdAndIsReadFalse(userId);
+        return new ResponseEntity<List<Notification>>(notifications, HttpStatus.OK);
+    }
 
 
 
