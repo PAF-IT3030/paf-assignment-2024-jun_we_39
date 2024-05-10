@@ -20,8 +20,12 @@ public class MealController {
         this.mealPlanRepository = mealPlanRepository;
     }
 
+    @GetMapping
+    public ResponseEntity<List<MealPlan>> getMealPlans() {
+        List<MealPlan> mealPlans = mealPlanRepository.findAll();
+        return new ResponseEntity<>(mealPlans, HttpStatus.OK);
+    }
 
 
 
-    
 }
