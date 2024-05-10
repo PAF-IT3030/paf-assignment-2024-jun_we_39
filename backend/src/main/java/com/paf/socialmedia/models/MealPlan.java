@@ -15,5 +15,6 @@ public class MealPlan {
     private String userId;
     private String mealDetails;  // Consider using a structured type or JSON
     private String dietaryPreferences;
-    
+    private String mediaUrl;
+    private String ingredients;
 }
