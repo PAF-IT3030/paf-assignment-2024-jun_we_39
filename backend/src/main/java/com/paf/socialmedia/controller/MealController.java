@@ -54,6 +54,11 @@ public class MealController {
          // Set the ID of the updated meal plan
          updatedMealPlan.setId(mealPlanId);
 
+        // Update the meal plan
+        MealPlan savedMealPlan = mealPlanRepository.save(updatedMealPlan);
+
+        return new ResponseEntity<>(savedMealPlan, HttpStatus.OK);
+    }
 
 
 
