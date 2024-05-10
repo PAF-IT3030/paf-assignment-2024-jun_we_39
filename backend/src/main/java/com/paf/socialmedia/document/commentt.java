@@ -22,4 +22,5 @@ public class Comment {
     private Date createdAt;
 }
     private Date updatedAt;
+    
 }
