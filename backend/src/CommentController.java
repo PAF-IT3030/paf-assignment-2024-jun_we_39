@@ -13,7 +13,7 @@ public class CommentController {
     @Autowired
     private CommentService commentService;
 
-    @GetMapping("/{id})
+    @GetMapping("/{id}")
     public ResponseEntity<?> getCommentById(@PathVariable String id){
         return commentService.getCommentById(id);
     }
