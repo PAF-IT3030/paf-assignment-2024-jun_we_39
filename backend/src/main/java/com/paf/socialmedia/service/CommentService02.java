@@ -33,6 +33,17 @@ public class CommentService02 {
         List<Notification> notifications = notificationRepository.findByUserIdAndIsReadFalse(userId);
         return new ResponseEntity<List<Notification>>(notifications, HttpStatus.OK);
     }
+    public ResponseEntity<?> saveNotification(Notification notification){
+        try{
+            notification.setIsRead(false);
+            notification.setCreatedAt(new Date(System.currentTimeMillis()));
+            notification.setUpdatedAt(new Date(System.currentTimeMillis()));
+            notificationRepository.save(notification);
+            return new ResponseEntity<Notification>(notification, HttpStatus.OK);
+        }catch(Exception e){
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 
 
 
