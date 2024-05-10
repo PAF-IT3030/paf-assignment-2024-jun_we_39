@@ -56,8 +56,8 @@ public class CommentService02 {
                 updateNotification.setIsRead(notification.getIsRead());
             }
 
-
-
+            updateNotification.setUpdatedAt(new Date(System.currentTimeMillis()));
+            return new ResponseEntity<>(notificationRepository.save(updateNotification), HttpStatus.OK);
     }
 
 
