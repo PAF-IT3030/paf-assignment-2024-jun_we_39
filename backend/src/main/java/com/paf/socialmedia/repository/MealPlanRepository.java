@@ -8,6 +8,7 @@ import java.util.List;
 
 @Repository
 
-public class MealPlanRepository {
-    
+public class MealPlanRepository extends MongoRepository<MealPlan, String> {
+    List<MealPlan> findByUserId(String userId);
+
 }
